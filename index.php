@@ -40,7 +40,75 @@
         ]
     ];
 
-    foreach($faqs as $faq){
-        echo "<h2>{$faq['question']}</h2>" . "<p>{$faq['answer']}</p>";
-    }
+    $navLinks = [
+        [
+            'title' => 'Introduzione',
+            'url' => '#',
+            'status'=>'',
+        ],
+        [
+            'title' => 'Norme sulla privacy',
+            'url' => '#',
+            'status'=>'',
+        ],
+        [
+            'title' => 'Termini di servizio',
+            'url' => '#',
+            'status'=>'',
+        ],
+        [
+            'title' => 'Tecnologie',
+            'url' => '#',
+            'status'=>'',
+        ],
+        [
+            'title' => 'Domande frequenti',
+            'url' => '#',
+            'status'=>'active',
+        ]
+    ];
+    // foreach($faqs as $faq){
+    //     echo "<h2>{$faq['question']}</h2>" . "<p>{$faq['answer']}</p>";
+    // }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Domande frequenti - Privacy e termini</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="top-left">
+                <img src="img/google-logo.jpg" alt="Logo Google"> 
+                <span class="logo-text">Privacy e termini</span>
+            </div>
+            <div class="top-right">
+                <i class="fas fa-th"></i>
+                <img src="img/profile-img.png" alt="Immagine profilo">
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <?php
+                    foreach($navLinks as $link){
+                        if($link['status'] === 'active'){
+                            echo "<li><a href=" . $link['url'] . " class='active'>" . $link['title'] . "</a></li>";
+                        }else{
+                            echo "<li><a href=" . $link['url'] . ">" . $link['title'] . "</a></li>";
+                        }
+                    }
+                ?>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>

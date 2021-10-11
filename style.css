@@ -60,11 +60,11 @@ header {
     margin-bottom: 20px;
 }
 
-header ul {
+ul {
     list-style: none;
 }
 
-header ul li {
+ul li {
     display: inline-block;
 }
 
@@ -119,4 +119,33 @@ ol {
 li>ol {
     list-style-type: lower-alpha;
     padding-left: 30px;
+}
+/* footer */
+footer {
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+footer .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+footer i {
+    color: #3367d6;
+}
+
+footer select {
+    padding-right: 70px;
 }

@@ -15,6 +15,7 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
+    top: 0;
 }
 
 .header-top {
@@ -32,7 +33,7 @@ header {
 
 .logo-text {
     font-size: 20px;
-    color: gray;
+    color: #5f6368;
     margin-left: 5px;
 }
 
@@ -41,7 +42,7 @@ header {
 }
 
 .top-right {
-    color: gray;
+    color: #5f6368;
 }
 
 .top-right i {
@@ -69,25 +70,50 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    color: gray;
+    color: #5f6368;
     margin-right: 30px;
     font-weight: bold;
 }
 
 header ul li a.active {
     padding-bottom: 18px;
-    color: rgb(30, 104, 215);
-    border-bottom: 4px solid rgb(30, 104, 215);
+    color: #3367d6;
+    border-bottom: 4px solid #3367d6;
 }
  
 /* main */
 main {
     margin-top: 200px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
+}
+
+h2 {
+    color: #3c4043;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #3c4043;
+    margin-top: 30px;
+}
+
+main .blue {
+    color: #3367d6;
+    cursor: pointer;
+}
+
+.container p {
+    margin-bottom: 50px;
+}
+
+ol {
+    padding-left: 20px;
 }
 
 li>ol {

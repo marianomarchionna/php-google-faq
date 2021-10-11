@@ -67,9 +67,6 @@
             'status'=>'active',
         ]
     ];
-    // foreach($faqs as $faq){
-    //     echo "<h2>{$faq['question']}</h2>" . "<p>{$faq['answer']}</p>";
-    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -82,6 +79,7 @@
     <title>Domande frequenti - Privacy e termini</title>
 </head>
 <body>
+    <!-- header -->
     <header>
         <div class="header-top">
             <div class="top-left">
@@ -107,8 +105,17 @@
             </ul>
         </div>
     </header>
+    <!-- fine header -->
+    <!-- main -->
     <main>
-
-    </main>
+        <div class="container">
+            <?php
+                foreach($faqs as $faq){
+                    echo "<h2>{$faq['question']}</h2>" . "<p>{$faq['answer']}</p>";
+                }
+            ?>
+        </div>
+    </main> 
+    <!-- fine main -->
 </body>
 </html>

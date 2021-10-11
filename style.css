@@ -10,6 +10,7 @@ body {
  
 /* sheader */
 header {
+    background-color: white;
     border-bottom: 1px solid lightgray;
     position: fixed;
     z-index: 999;
@@ -77,4 +78,19 @@ header ul li a.active {
     padding-bottom: 18px;
     color: rgb(30, 104, 215);
     border-bottom: 4px solid rgb(30, 104, 215);
+}
+ 
+/* main */
+main {
+    margin-top: 200px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+li>ol {
+    list-style-type: lower-alpha;
+    padding-left: 30px;
 }
